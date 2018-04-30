@@ -17,10 +17,10 @@
 		{ "key": "BOARD", "value": "%{board}" },
 		{ "key": "ESP_DIR", "value": "%{esp_dir}" },
 		{ "key": "MAKEESPARDUINO_DIR", "value": "%{makeesparduino_dir}" },
-		{ "key": "COM_PORT", "value": "%{com_port}" },
+		{ "key": "PORT", "value": "%{port}" },
 		{ "key": "PORT_SPEED", "value": "%{port_speed}" },
 		{ "key": "SKETCH", "value": "%{ProjectDirectory}/main.cpp" },
-		{ "key": "DEFAULTCOMPORT", "value": "/dev/ttyUSB0" },
+		{ "key": "DEFAULT_PORT", "value": "/dev/ttyUSB0" },
 		{ "key": "SERIAL_MONITOR_PROGRAM", "value": "%{serial_monitor_program}" },
 		{ "key": "SERIAL_MONITOR_PROGRAM_ARG_PORT", "value": "%{serial_monitor_program_arg_port}" },
 		{ "key": "SERIAL_MONITOR_PROGRAM_ARG_SPEED", "value": "%{serial_monitor_program_arg_speed}" },
@@ -28,8 +28,7 @@
 		{ "key": "DEFAULT_SERIAL_MONITOR_PROGRAM", "value": "/usr/bin/gtkterm" },
 		{ "key": "DEFAULT_SERIAL_MONITOR_PROGRAM_ARG_PORT", "value": "--port" },
 		{ "key": "DEFAULT_SERIAL_MONITOR_PROGRAM_ARG_SPEED", "value": "--speed" },
-		{ "key": "DEFAULT_ARDUINO_PORT_SPEED", "value": "115200" }
-
+		{ "key": "DEFAULT_PORT_SPEED", "value": "115200" }
 	],
 
 	"pages":
@@ -131,6 +130,25 @@
 					"mandatory": true,
 					"type": "LineEdit",
 					"data":{"trText": "%{DEFAULTCOMPORT}"}
+				},
+				{
+					"name": "port_speed",
+					"trDisplayName": "Serial port baudrate:",
+					"mandatory": true,
+					"type": "LineEdit",
+					"data":{
+						"validator": "^[^\"]+$",
+						"trText": "%{DEFAULT_PORT_SPEED}"
+					}
+				},
+				{
+					"name": "serial_monitor_program",
+				{
+					"name": "port",
+					"trDisplayName": "Port:",
+					"mandatory": true,
+					"type": "LineEdit",
+					"data":{"trText": "%{DEFAULT_PORT}"}
 				},
 				{
 					"name": "port_speed",
