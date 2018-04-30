@@ -111,7 +111,7 @@
     </valuelist>
     <value type="int" key="PE.EnvironmentAspect.Base">2</value>
     <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
-    <value type="QString" key="ProjectExplorer.CustomExecutableRunConfiguration.Arguments">%{SERIAL_MONITOR_PROGRAM_ARG_PORT} %{COMPORT} %{SERIAL_MONITOR_PROGRAM_ARG_SPEED} %{PORT_SPEED}</value>
+    <value type="QString" key="ProjectExplorer.CustomExecutableRunConfiguration.Arguments">%{SERIAL_MONITOR_PROGRAM_ARG_PORT} %{PORT} %{SERIAL_MONITOR_PROGRAM_ARG_SPEED} %{PORT_SPEED}</value>
     <value type="QString" key="ProjectExplorer.CustomExecutableRunConfiguration.Executable">%{SERIAL_MONITOR_PROGRAM}</value>
     <value type="QString" key="ProjectExplorer.CustomExecutableRunConfiguration.WorkingDirectory"></value>
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Run %{SERIAL_MONITOR_PROGRAM}</value>
